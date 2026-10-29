@@ -1,0 +1,28 @@
+LP INVESTIDORES — DR. ENERGIA BR
+Exportação para hospedagem em 28/10/2026.
+Fonte: versão local com ajustes de 27/10/2026.
+
+COMO PUBLICAR
+1. Extraia este ZIP no computador.
+2. Abra o gerenciador de arquivos ou FTP da sua hospedagem.
+3. Entre na pasta do domínio ou subdomínio que vai receber a LP
+   (normalmente public_html, www ou htdocs).
+4. Envie para essa pasta TODO O CONTEÚDO da pasta public_html deste pacote:
+   index.html, interacoes.js e a pasta assets completa.
+   O index.html deve ficar diretamente na pasta de destino.
+   Se a pasta já tiver um site, preserve uma cópia antes de substituir arquivos.
+5. Ative HTTPS no domínio e abra a página no navegador.
+   Confira o simulador, os vídeos e os botões de WhatsApp.
+
+ESTRUTURA DOS ARQUIVOS PÚBLICOS
+index.html
+interacoes.js
+assets/ (imagens, fontes e dois vídeos)
+
+A LP é estática: pode ser servida diretamente pela hospedagem.
+Os caminhos relativos permitem publicar na raiz ou em uma subpasta.
+O simulador e o carrossel usam JavaScript no navegador.
+Os botões de contato direcionam ao WhatsApp já configurado na LP.
+As alternativas de vídeo no YouTube e os links externos usam internet.
+Este pacote contém os arquivos para publicação; o envio ao servidor
+é feito pelos passos acima.

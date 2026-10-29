@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Dr. Energia BR | Investimento em usinas solares</title>
+<style>
+/* greek */
+@font-face {
+  font-family: 'Syne';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/syne-1.woff2") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Syne';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/syne-2.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Syne';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("assets/syne-3.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* greek */
+@font-face {
+  font-family: 'Syne';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/syne-1.woff2") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Syne';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/syne-2.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Syne';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("assets/syne-3.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* greek */
+@font-face {
+  font-family: 'Syne';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/syne-1.woff2") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Syne';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/syne-2.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Syne';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("assets/syne-3.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* greek */
+@font-face {
+  font-family: 'Syne';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/syne-1.woff2") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Syne';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/syne-2.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Syne';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("assets/syne-3.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* greek */
+@font-face {
+  font-family: 'Syne';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("assets/syne-1.woff2") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Syne';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("assets/syne-2.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Syne';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("assets/syne-3.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+
+html{scroll-behavior:smooth}
+@keyframes drJump{0%{transform:translateY(0) scale(1,1)}12%{transform:translateY(0) scale(1.08,.9)}35%{transform:translateY(-17px) scale(.95,1.06)}55%{transform:translateY(-19px) scale(1,1)}75%{transform:translateY(0) scale(1.08,.92)}86%{transform:translateY(-5px) scale(.98,1.02)}100%{transform:translateY(0) scale(1,1)}}
+@keyframes drGreenPulse{0%,100%{box-shadow:0 0 0 0 rgba(166,240,46,.2),0 12px 34px rgba(166,240,46,.22)}50%{box-shadow:0 0 0 10px rgba(166,240,46,0),0 16px 44px rgba(166,240,46,.42)}}
+.brand-primary-cta{animation:drGreenPulse 2.4s ease-in-out infinite}
+@media(prefers-reduced-motion:reduce){.brand-primary-cta{animation:none}}
+body{margin:0;background:#0d1b28;font-family:'Syne',sans-serif;color:#141614;-webkit-font-smoothing:antialiased}
+*{box-sizing:border-box}
+a{color:#a6f02e;text-decoration:none}
+a:hover{color:#c4ff6a}
+input[type=range]{-webkit-appearance:none;appearance:none;width:100%;height:6px;border-radius:99px;background:linear-gradient(90deg,#a6f02e var(--p),#d9dbd4 var(--p));outline:none}
+input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:26px;height:26px;border-radius:50%;background:#141614;border:4px solid #a6f02e;cursor:grab}
+input[type=range]::-moz-range-thumb{width:20px;height:20px;border-radius:50%;background:#141614;border:4px solid #a6f02e;cursor:grab}
+.usinas-carousel{position:relative;width:100%;height:440px;border-radius:26px;overflow:hidden;background:#142331;touch-action:pan-y;isolation:isolate}
+.usina-slide{position:absolute;inset:0;transition:opacity .7s ease;pointer-events:none}
+.usina-image{width:100%;height:100%;display:block;object-fit:cover;object-position:var(--usina-position)}
+.usina-shade{position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,transparent 65%,rgba(0,0,0,.5));z-index:2}
+.usina-arrow,.usina-toggle,.usina-dot{appearance:none;font:inherit;color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0;border:0}
+.usina-arrow{position:absolute;top:50%;transform:translateY(-50%);z-index:3;width:46px;height:46px;border-radius:50%;background:rgba(13,27,40,.48);border:1px solid rgba(255,255,255,.3);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);transition:background .2s,color .2s}
+.usina-prev{left:20px}.usina-next{right:20px}
+.usina-arrow:hover,.usina-toggle:hover{background:#a6f02e;color:#0d1b28}
+.usina-controls{position:absolute;z-index:3;bottom:18px;left:50%;transform:translateX(-50%);display:flex;align-items:center;gap:8px;padding:3px 10px 3px 3px;border-radius:99px;background:rgba(13,27,40,.65);border:1px solid rgba(255,255,255,.24);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
+.usina-toggle{width:38px;height:38px;background:transparent;border-radius:50%;transition:background .2s,color .2s}
+.usina-dots{display:flex;align-items:center;gap:0}.usina-dot{width:36px;height:38px;background:transparent;border-radius:12px}.usina-dot span{display:block;height:8px;border-radius:99px;transition:width .25s,background .25s}
+.usina-count{min-width:48px;font-size:12px;font-weight:600;color:rgba(255,255,255,.8);font-variant-numeric:tabular-nums;text-align:center}
+.usinas-carousel:focus-visible,.usinas-carousel button:focus-visible{outline:3px solid #a6f02e;outline-offset:-4px}
+@media(prefers-reduced-motion:reduce){.usina-slide,.usina-dot span{transition:none}}
+@media (max-width:760px){
+.usinas-carousel{height:280px;border-radius:22px}
+.usina-image{object-position:var(--usina-position-mobile)}
+.usina-arrow{width:40px;height:40px}.usina-prev{left:12px}.usina-next{right:12px}
+.usina-controls{bottom:12px}
+#como-gera-renda>div{gap:40px!important}
+#como-gera-renda li{grid-template-columns:40px minmax(0,1fr)!important;gap:14px!important;padding:22px!important}
+#como-gera-renda li>span{width:40px!important;height:40px!important}
+#como-gera-renda li>div{display:contents!important}
+#como-gera-renda li h3{align-self:center}
+#como-gera-renda li p{grid-column:1/-1}
+[data-m=stack]{grid-template-columns:minmax(0,1fr)!important}
+[data-m=stack]>*{border-right:none!important}
+[data-m=trow]{grid-template-columns:minmax(0,1fr) 54px 92px!important;gap:10px!important;padding-left:16px!important;padding-right:16px!important}
+[data-m=trow] span{font-size:14px!important}
+[data-m=step]{grid-template-columns:48px minmax(0,1fr)!important;row-gap:12px!important}
+[data-m=st-side]{display:contents!important}
+[data-m=st-icon]{grid-column:1;grid-row:1/span 2;align-self:start}
+[data-m=st-title]{grid-column:2;order:1;align-items:flex-start!important;text-align:left!important}
+[data-m=st-box]{grid-column:2;order:2;max-width:none!important}
+[data-m=st-arrow]{display:none}
+[data-m=wrap]{white-space:normal!important;text-wrap:balance}
+br{display:none}
+[data-m=st-line]{left:24px!important}
+[data-m=logo]{height:22px!important}
+[data-m=hcta]{font-size:13px!important;padding:10px 12px!important}
+[data-m=ctas]>a{width:100%;text-align:center}
+section{padding-top:80px!important;padding-bottom:80px!important}
+}
+@media(max-width:420px){
+header[data-lp-header]{left:14px!important;right:14px!important;padding:12px!important;gap:10px!important}
+header[data-lp-header] [data-m=logo]{height:20px!important}
+header[data-lp-header] [data-m=hcta]{font-size:12px!important;padding:10px!important;flex:none}
+}
+
+.scp0:hover { background: rgb(196, 255, 106) !important; color: rgb(13, 27, 40) !important; transform: translateY(-2px) !important; }
+.scp1:hover { background: linear-gradient(135deg, rgb(1, 131, 255), rgb(5, 103, 196)) !important; color: rgb(255, 255, 255) !important; --tx: #fff !important; --tx2: #fff !important; --acc: #9bf621 !important; box-shadow: rgba(1, 131, 255, 0.3) 0px 12px 40px !important; transform: translateY(-4px) !important; }
+.scp2:hover { background: linear-gradient(135deg, rgb(1, 131, 255), rgb(5, 103, 196)) !important; border-color: rgba(255, 255, 255, 0.25) !important; box-shadow: rgba(1, 131, 255, 0.35) 0px 12px 40px !important; transform: translateY(-4px) !important; }
+.scp3:hover { --bx: #9bf621 !important; color: rgb(13, 27, 40) !important; transform: translateY(-4px) !important; }
+.scp4:hover { --pb: rgba(1,131,255,.55) !important; border-color: rgba(255, 255, 255, 0.3) !important; box-shadow: rgba(1, 131, 255, 0.35) 0px 12px 40px !important; transform: translateY(-4px) !important; }
+.scp5:hover { background: linear-gradient(135deg, rgb(1, 131, 255), rgb(5, 103, 196)) !important; color: rgb(255, 255, 255) !important; --tx: #fff !important; --tx2: #fff !important; --acc: #9bf621 !important; box-shadow: rgba(1, 131, 255, 0.3) 0px 12px 40px !important; transform: translateY(-2px) !important; }
+.scp6:hover { color: rgb(255, 255, 255) !important; --pin: #0183ff !important; }
+.scp7:hover { background: rgb(1, 131, 255) !important; color: rgb(255, 255, 255) !important; transform: translateY(-3px) !important; }
+html,body{min-height:100%;margin:0}
+img{max-width:100%}
+input[type=range]:disabled{opacity:1}
+.lp-faq summary::-webkit-details-marker{display:none}
+.lp-faq summary::marker{content:''}
+.faq-symbol{flex:0 0 32px;width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:20px;background:#f3f2ed;color:#0d1b28;transition:transform .2s,background .2s}
+.lp-faq[open] .faq-symbol{transform:rotate(45deg);background:#a6f02e}
+.lp-faq summary:focus-visible{outline:3px solid #a6f02e;outline-offset:-3px;border-radius:18px}
+.usinas-carousel:not([data-enhanced]) .usina-arrow,.usinas-carousel:not([data-enhanced]) .usina-controls{display:none}
+.video-alternative{display:inline-block;align-self:center;margin-top:12px;color:#a6f02e;font-size:13px;text-decoration:underline;text-underline-offset:3px}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
+
+
+@media(max-width:760px){[style*="background-attachment: fixed"]{background-attachment:scroll!important}}
+</style>
+<style id="simulador-toque">
+input.simulador-barra[type=range]{height:44px;background:none;border:0;margin:0;touch-action:pan-y;cursor:pointer}
+input.simulador-barra[type=range]::-webkit-slider-runnable-track{height:6px;border-radius:99px;background:linear-gradient(90deg,#a6f02e var(--p),#d9dbd4 var(--p))}
+input.simulador-barra[type=range]::-webkit-slider-thumb{margin-top:-10px}
+input.simulador-barra[type=range]::-moz-range-track{height:6px;border-radius:99px;background:linear-gradient(90deg,#a6f02e var(--p),#d9dbd4 var(--p))}
+input.simulador-barra[type=range]::-moz-range-thumb{margin-top:0}
+input.simulador-barra[type=range]:focus-visible{outline:3px solid #0183ff;outline-offset:4px;border-radius:8px}
+.simulador-aviso{margin:0;font-size:13px;line-height:1.5;color:#5a5d57}
+[data-simulador][data-enhanced=true] .simulador-aviso{display:none}
+</style><style id="simulador-arraste-mobile">input.simulador-barra[type=range]{touch-action:none;-webkit-user-select:none;user-select:none}</style></head>
+<body>
+<div id="dc-root"><div class="sc-host" data-sc-name="dr-energia-lp-investidores-visualizacao"><header data-lp-header="true" style="position: fixed; top: 14px; left: clamp(14px, 10.42vw, 200px); right: clamp(14px, 10.42vw, 200px); z-index: 50; display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 12px 14px 12px 22px; border-radius: 18px; background: linear-gradient(135deg, rgba(13, 27, 40, 0.96), rgba(18, 48, 56, 0.9)); backdrop-filter: blur(22px) saturate(160%); border: 1px solid rgba(166, 240, 46, 0.18); box-shadow: rgba(255, 255, 255, 0.14) 0px 1px 0px inset, rgba(0, 0, 0, 0.2) 0px -1px 0px inset, rgba(0, 0, 0, 0.3) 0px 12px 40px;">
+<a href="#top" style="display: flex; align-items: center;"><img alt="Dr. Energia BR" data-m="logo" decoding="async" height="255" loading="eager" src="assets/marca-dr-energia.webp" style="height: 30px; width: auto; display: block;" width="1600"/></a>
+<a class="brand-primary-cta scp0" data-m="hcta" href="https://wa.me/5598988049776?text=Ol%C3%A1%2C%20quero%20agendar%20a%20conversa%20de%20investimento%20em%20usina%20solar" style="font-weight: 700; font-size: 14px; color: rgb(13, 27, 40); background: rgb(166, 240, 46); padding: 11px 18px; border-radius: 12px; white-space: nowrap; display: inline-block; box-shadow: rgba(166, 240, 46, 0.22) 0px 12px 34px; transition: background 0.2s, color 0.2s, transform 0.2s, box-shadow 0.2s;" target="_blank">Agendar conversa</a></header><section data-screen-label="01 Hero" id="top" style="position: relative; min-height: 100vh; display: flex; flex-direction: column; justify-content: flex-end; padding: 150px clamp(24px, 10.42vw, 200px) 48px; overflow: hidden; background: rgb(13, 27, 40); color: rgb(255, 255, 255);">
+<div style="position: absolute; inset: -20% 0px; will-change: transform; transform:none;"><img alt="" decoding="async" height="893" loading="eager" src="assets/hero-usina.webp" style="width: 100%; height: 100%; object-fit: cover; display: block;" width="1600"/></div>
+<div style="position: absolute; inset: 0px; pointer-events: none; background: linear-gradient(rgba(13, 27, 40, 0.94) 0%, rgba(13, 27, 40, 0.86) 35%, rgba(13, 27, 40, 0.92) 65%, rgba(13, 27, 40, 0.99) 100%);"></div>
+<div style="position: absolute; width: 520px; height: 520px; right: -120px; bottom: 40px; border-radius: 50%; background: rgb(166, 240, 46); opacity: 0.28; filter: blur(90px); pointer-events: none;"></div>
+<div style="position: absolute; width: 420px; height: 420px; left: -100px; bottom: -120px; border-radius: 50%; background: rgb(31, 111, 255); opacity: 0.35; filter: blur(90px); pointer-events: none;"></div>
+<div style="position: relative; width: 100%; display: flex; flex-direction: column; align-items: center; gap: 40px; pointer-events: none;">
+<div style="display: flex; flex-direction: column; align-items: center; text-align: center; gap: 22px; max-width: 980px;">
+<span style="font-size: 14px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: rgb(166, 240, 46);">Usinas solares no Maranhão</span>
+<h1 style="margin: 0px; font-size: clamp(40px, 5.6vw, 84px); line-height: 0.98; font-weight: 700; letter-spacing: -0.035em; text-wrap: balance;">Seu patrimônio gerando energia. <span style="color: rgb(166, 240, 46);">Potencial de retorno de 2% ao mês.</span></h1>
+<p style="margin: 0px; font-size: 18px; line-height: 1.55; color: rgba(255, 255, 255, 0.82); max-width: 780px; text-wrap: pretty;">Seja dono de uma usina solar no Maranhão, com gestão dos assinantes,<br/>cobranças e repasses pela cooperativa. O retorno projetado varia conforme<br/>a usina e as condições da operação.</p>
+<div data-m="ctas" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; pointer-events: auto;">
+<a class="brand-primary-cta scp0" href="https://wa.me/5598988049776?text=Ol%C3%A1%2C%20quero%20agendar%20a%20conversa%20de%20investimento%20em%20usina%20solar" style="font-weight: 700; font-size: 16px; color: rgb(13, 27, 40); background: rgb(166, 240, 46); padding: 16px 28px; border-radius: 12px; display: inline-block; box-shadow: rgba(166, 240, 46, 0.22) 0px 12px 34px; transition: background 0.2s, color 0.2s, transform 0.2s, box-shadow 0.2s;" target="_blank">Quero ver as usinas disponíveis →</a>
+</div>
+<p style="margin: 0px; font-size: 13px; color: rgba(255, 255, 255, 0.6);">Rentabilidade-alvo de 1,5% a 2% ao mês, conforme a usina. Premissas abertas nesta página.</p>
+</div>
+<div data-m="stack" style="width: 100%; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); border-radius: 22px; overflow: hidden; background: linear-gradient(135deg, rgba(255, 255, 255, 0.14), rgba(255, 255, 255, 0.04)); backdrop-filter: blur(24px) saturate(180%); border: 1px solid rgba(255, 255, 255, 0.18); box-shadow: rgba(255, 255, 255, 0.3) 0px 1px 0px inset, rgba(0, 0, 0, 0.3) 0px 20px 50px;">
+<div style="padding: 26px 28px; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 6px; border-right: 1px solid rgba(255, 255, 255, 0.1);">
+<span style="font-size: 36px; font-weight: 700; letter-spacing: -0.03em; color: rgb(255, 255, 255);"><span class="sc-interp">2% a.m.</span></span>
+<span style="font-size: 14px; line-height: 1.4; color: rgba(255, 255, 255, 0.72);"><span class="sc-interp">rentabilidade-alvo do modelo</span></span>
+</div>
+<div style="padding: 26px 28px; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 6px; border-right: 1px solid rgba(255, 255, 255, 0.1);">
+<span style="font-size: 36px; font-weight: 700; letter-spacing: -0.03em; color: rgb(255, 255, 255);"><span class="sc-interp">~4 anos</span></span>
+<span style="font-size: 14px; line-height: 1.4; color: rgba(255, 255, 255, 0.72);"><span class="sc-interp">payback médio projetado</span></span>
+</div>
+<div style="padding: 26px 28px; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 6px; border-right: 1px solid rgba(255, 255, 255, 0.1);">
+<span style="font-size: 36px; font-weight: 700; letter-spacing: -0.03em; color: rgb(255, 255, 255);"><span class="sc-interp">+ de 100</span></span>
+<span style="font-size: 14px; line-height: 1.4; color: rgba(255, 255, 255, 0.72);"><span class="sc-interp">usinas próprias e administradas</span></span>
+</div>
+<div style="padding: 26px 28px; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 6px; border-right: 1px solid rgba(255, 255, 255, 0.1);">
+<span style="font-size: 36px; font-weight: 700; letter-spacing: -0.03em; color: rgb(255, 255, 255);"><span class="sc-interp">+1.500</span></span>
+<span style="font-size: 14px; line-height: 1.4; color: rgba(255, 255, 255, 0.72);"><span class="sc-interp">clientes pagando a conta todo mês</span></span>
+</div>
+</div>
+</div></section><section aria-labelledby="videos-title" data-screen-label="01.5 Vídeos" id="videos" style="position: relative; overflow: hidden; background: rgb(13, 27, 40); color: rgb(255, 255, 255); padding: 112px clamp(24px, 10.42vw, 200px) 120px;">
+<div style="position: absolute; width: 460px; height: 460px; left: -220px; top: 12%; border-radius: 50%; background: rgb(31, 111, 255); opacity: 0.14; filter: blur(100px); pointer-events: none;"></div>
+<div style="position: absolute; width: 420px; height: 420px; right: -180px; bottom: 4%; border-radius: 50%; background: rgb(166, 240, 46); opacity: 0.12; filter: blur(110px); pointer-events: none;"></div>
+<div style="position: relative; width: 100%; display: flex; flex-direction: column; align-items: center; gap: 48px;">
+<div style="display: flex; flex-direction: column; align-items: center; text-align: center; gap: 16px; max-width: 760px;">
+<span style="font-size: 13px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: rgb(166, 240, 46);">Conteúdo em vídeo</span>
+<h2 id="videos-title" style="margin: 0px; font-size: clamp(32px, 3.4vw, 52px); line-height: 1.02; font-weight: 700; letter-spacing: -0.03em; text-wrap: balance;">Conheça a oportunidade de investimento</h2>
+<p style="margin: 0px; font-size: 17px; line-height: 1.6; color: rgba(255, 255, 255, 0.7); max-width: 620px; text-wrap: pretty;">Assista aos vídeos e entenda melhor o modelo da Dr. Energia.</p>
+</div>
+<div style="width: 100%; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 360px)); justify-content: center; gap: 24px;">
+<div class="video-card" style="min-width:0;display:flex;flex-direction:column;"><div style="position: relative; aspect-ratio: 9 / 16; overflow: hidden; border-radius: 24px; background: rgb(7, 18, 28); border: 1px solid rgba(255, 255, 255, 0.16); box-shadow: rgba(0, 0, 0, 0.38) 0px 24px 70px, rgba(255, 255, 255, 0.1) 0px 1px 0px inset;">
+<video aria-label="Vídeo 1 sobre a oportunidade de investimento da Dr. Energia" controls="" controlslist="nodownload" playsinline="" poster="assets/video-investidor-01-capa.webp" preload="metadata" style="position: absolute; inset: 0px; width: 100%; height: 100%; border: 0px; background: rgb(7, 18, 28); object-fit: cover;">
+<source src="assets/video-investidor-01.mp4" type="video/mp4"/>
+          Seu navegador não consegue reproduzir este vídeo. <a href="https://youtube.com/shorts/730scDoUpsk?feature=share" rel="noopener noreferrer" target="_blank">Assista no YouTube</a>.
+        </video>
+</div><a class="video-alternative" href="https://youtube.com/shorts/730scDoUpsk?feature=share" rel="noopener noreferrer" target="_blank">Assistir ao vídeo 1 no YouTube</a></div>
+<div class="video-card" style="min-width:0;display:flex;flex-direction:column;"><div style="position: relative; aspect-ratio: 9 / 16; overflow: hidden; border-radius: 24px; background: rgb(7, 18, 28); border: 1px solid rgba(255, 255, 255, 0.16); box-shadow: rgba(0, 0, 0, 0.38) 0px 24px 70px, rgba(255, 255, 255, 0.1) 0px 1px 0px inset;">
+<video aria-label="Vídeo 2 sobre a oportunidade de investimento da Dr. Energia" controls="" controlslist="nodownload" playsinline="" poster="assets/video-investidor-02-capa.webp" preload="metadata" style="position: absolute; inset: 0px; width: 100%; height: 100%; border: 0px; background: rgb(7, 18, 28); object-fit: cover;">
+<source src="assets/video-investidor-02.mp4" type="video/mp4"/>
+          Seu navegador não consegue reproduzir este vídeo. <a href="https://youtube.com/shorts/jaNRmLKUKJg?feature=share" rel="noopener noreferrer" target="_blank">Assista no YouTube</a>.
+        </video>
+</div><a class="video-alternative" href="https://youtube.com/shorts/jaNRmLKUKJg?feature=share" rel="noopener noreferrer" target="_blank">Assistir ao vídeo 2 no YouTube</a></div>
+</div>
+</div></section><section data-screen-label="02 Simulador" style="background: rgb(242, 242, 238); padding: 120px clamp(24px, 10.42vw, 200px);">
+<div data-m="stack" style="width: 100%; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); gap: 64px; align-items: center;">
+<div style="display: flex; flex-direction: column; gap: 18px;">
+<span style="font-size: 13px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: rgb(77, 125, 10);">A conta, com o seu número</span>
+<h2 style="margin: 0px; font-size: clamp(32px, 3.4vw, 52px); line-height: 1.02; font-weight: 700; letter-spacing: -0.03em; text-wrap: balance;">Quanto a sua usina coloca na sua conta todo mês.</h2>
+<p style="margin: 0px; font-size: 17px; line-height: 1.6; color: rgb(74, 77, 72); text-wrap: pretty;">Arraste e veja. Simule um aporte de R$ 40 mil a R$ 300 mil. O cálculo usa a rentabilidade-alvo de 2% ao mês sobre o valor aportado.</p>
+</div>
+<div style="display: flex; flex-direction: column; gap: 18px;">
+<div data-simulador="" style="background: rgb(255, 255, 255); border-radius: 24px; padding: 32px; border: 1px solid rgba(0, 0, 0, 0.06); box-shadow: rgba(20, 22, 20, 0.08) 0px 20px 60px; display: flex; flex-direction: column; gap: 26px;">
+<div style="display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap;">
+<span style="font-size: 15px; font-weight: 600; color: rgb(74, 77, 72);">Seu aporte</span>
+<span data-calculo="aporte" style="font-size: clamp(28px, 8.5vw, 40px); font-weight: 700; letter-spacing: -0.03em; white-space: nowrap;"><span class="sc-interp">R$ 40.000</span></span>
+</div>
+<input aria-label="Valor do aporte em reais" class="simulador-barra" data-calculadora-aporte="" disabled="" max="300000" min="40000" step="10000" style="--p: 0%;" type="range" value="40000"/>
+<div style="display: flex; justify-content: space-between; font-size: 12px; color: rgb(138, 141, 134);"><span>R$ 40 mil</span><span>R$ 300 mil</span></div><p class="simulador-aviso" role="note">A prévia mostra os valores iniciais. Para simular, abra a LP no navegador.</p>
+<div data-m="stack" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 10px;">
+<div style="background: rgb(20, 22, 20); color: rgb(255, 255, 255); border-radius: 16px; padding: 18px; display: flex; flex-direction: column; gap: 6px;"><span style="font-size: 13px; color: rgba(255, 255, 255, 0.65);">Por mês</span><span data-calculo="mes" style="font-size: 24px; font-weight: 700; color: rgb(166, 240, 46); letter-spacing: -0.02em;"><span class="sc-interp">R$ 800</span></span></div>
+<div class="scp1" style="background: rgb(243, 242, 237); border-radius: 16px; padding: 18px; display: flex; flex-direction: column; gap: 6px; transition: background 0.3s, color 0.3s, box-shadow 0.3s, transform 0.3s; --tx: #0d1b28; --tx2: #5a5d57; --acc: #0183ff;"><span style="font-size: 13px; color: var(--tx2);">Por ano</span><span data-calculo="ano" style="font-size: 24px; font-weight: 700; letter-spacing: -0.02em; color: var(--tx);"><span class="sc-interp">R$ 9.600</span></span></div>
+<div class="scp1" style="background: rgb(243, 242, 237); border-radius: 16px; padding: 18px; display: flex; flex-direction: column; gap: 6px; transition: background 0.3s, color 0.3s, box-shadow 0.3s, transform 0.3s; --tx: #0d1b28; --tx2: #5a5d57; --acc: #0183ff;"><span style="font-size: 13px; color: var(--tx2);">Em 4 anos</span><span data-calculo="quatro" style="font-size: 24px; font-weight: 700; letter-spacing: -0.02em; color: var(--tx);"><span class="sc-interp">R$ 38.400</span></span></div>
+</div>
+</div>
+<p style="margin: 0px; font-size: 13px; line-height: 1.55; color: rgb(106, 109, 103); text-wrap: pretty;">Payback médio projetado de 3,5 a 4 anos. Você continua dono da usina, com vida útil estimada de 25 a 30 anos. Os valores são projeções da rentabilidade-alvo do modelo, sem garantia de resultado.</p>
+</div>
+</div></section><section aria-labelledby="quem-somos-title" data-screen-label="03 Quem somos" id="quem-somos" style="background: rgb(13, 27, 40); padding: 120px clamp(24px, 10.42vw, 200px);">
+<div style="width: 100%; display: flex; flex-direction: column; align-items: center; gap: 40px;">
+<div style="display: flex; flex-direction: column; align-items: center; text-align: center; gap: 18px; max-width: 860px;">
+<span style="font-size: 13px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: rgb(155, 246, 33);">Dr. Energia BR</span>
+<h2 id="quem-somos-title" style="margin: 0px; font-size: clamp(32px, 3.4vw, 52px); line-height: 1.02; font-weight: 700; letter-spacing: -0.03em; color: rgb(255, 255, 255);">Quem somos</h2>
+<p style="margin: 0px; font-size: 17px; line-height: 1.6; color: rgba(255, 255, 255, 0.78); text-wrap: pretty;">A Dr. Energia BR une tecnologia, experiência e propósito na gestão de usinas solares para investidores e na oferta de energia limpa com desconto para consumidores, com foco em inovação, transparência e resultado.</p>
+</div>
+<div data-m="stack" style="width: 100%; display: grid; grid-template-columns: repeat(3, minmax(0px, 1fr)); gap: 20px;">
+<article style="background: rgb(15, 26, 38); color: rgb(255, 255, 255); border-radius: 20px; padding: 32px; display: flex; flex-direction: column; gap: 16px; border: 1px solid rgba(155, 246, 33, 0.55); box-shadow: rgba(155, 246, 33, 0.08) 0px 0px 28px;">
+<h3 style="margin: 0px; font-size: 26px; font-weight: 700; letter-spacing: -0.02em; line-height: 1.2; color: rgb(155, 246, 33);">Missão</h3>
+<p style="margin: 0px; font-size: 17px; line-height: 1.6; color: rgba(255, 255, 255, 0.8); text-wrap: pretty;">Tornar a energia solar acessível, rentável e descomplicada.</p>
+</article>
+<article style="background: rgb(15, 26, 38); color: rgb(255, 255, 255); border-radius: 20px; padding: 32px; display: flex; flex-direction: column; gap: 16px; border: 1px solid rgba(155, 246, 33, 0.55); box-shadow: rgba(155, 246, 33, 0.08) 0px 0px 28px;">
+<h3 style="margin: 0px; font-size: 26px; font-weight: 700; letter-spacing: -0.02em; line-height: 1.2; color: rgb(155, 246, 33);">Visão</h3>
+<p style="margin: 0px; font-size: 17px; line-height: 1.6; color: rgba(255, 255, 255, 0.8); text-wrap: pretty;">Energia limpa como um direito acessível a todos.</p>
+</article>
+<article style="background: rgb(15, 26, 38); color: rgb(255, 255, 255); border-radius: 20px; padding: 32px; display: flex; flex-direction: column; gap: 16px; border: 1px solid rgba(155, 246, 33, 0.55); box-shadow: rgba(155, 246, 33, 0.08) 0px 0px 28px;">
+<h3 style="margin: 0px; font-size: 26px; font-weight: 700; letter-spacing: -0.02em; line-height: 1.2; color: rgb(155, 246, 33);">Valores</h3>
+<p style="margin: 0px; font-size: 17px; line-height: 1.6; color: rgba(255, 255, 255, 0.8); text-wrap: pretty;">Inovação, transparência, foco em resultados e compromisso com a sustentabilidade.</p>
+</article>
+</div>
+</div></section><section data-screen-label="04 Comparativo" id="comparativo" style="background: rgb(242, 242, 238); color: rgb(13, 27, 40); padding: 120px clamp(24px, 10.42vw, 200px);">
+<div style="width: 100%; display: flex; flex-direction: column; align-items: center; gap: 48px;">
+<div style="display: flex; flex-direction: column; align-items: center; text-align: center; gap: 18px; max-width: 860px;">
+<span style="font-size: 13px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: rgb(77, 125, 10);">A mesma pergunta que você já se fez</span>
+<h2 style="margin: 0px; font-size: clamp(32px, 3.4vw, 52px); line-height: 1.02; font-weight: 700; letter-spacing: -0.03em; text-wrap: balance;">Onde mais R$ 200 mil rendem R$ 4.000 por mês?</h2>
+<p style="margin: 0px; font-size: 17px; line-height: 1.6; color: rgb(74, 77, 72); text-wrap: pretty;">Comparação com as alternativas que disputam o mesmo dinheiro, usando as taxas vigentes em agosto de 2026. Números por mês, sobre um aporte de R$ 200 mil.</p>
+</div>
+<div style="width: 100%; display: flex; flex-direction: column; gap: 6px;">
+<div data-m="trow" style="display: grid; grid-template-columns: minmax(0px, 1fr) 90px 150px; gap: 16px; padding: 0px 24px 10px; font-size: 13px; color: rgb(106, 109, 103);"><span>Onde</span><span style="text-align: right;">Ao mês</span><span style="text-align: right;">Com R$ 200 mil</span></div>
+<div data-m="trow" style="display: grid; grid-template-columns: minmax(0px, 1fr) 90px 150px; gap: 16px; align-items: center; padding: 24px; border-radius: 16px; background: rgb(166, 240, 46); color: rgb(13, 27, 40); border-width: medium; border-style: none; border-color: currentcolor; border-image: none; box-shadow: rgba(166, 240, 46, 0.25) 0px 10px 40px;">
+<span style="font-size: 16px; font-weight: 600; line-height: 1.35;"><span class="sc-interp">Usina Dr. Energia (rentabilidade-alvo)</span></span>
+<span style="text-align: right; font-size: 16px;"><span class="sc-interp">2,00%</span></span>
+<span style="text-align: right; font-size: 18px; font-weight: 700;"><span class="sc-interp">R$ 4.000</span></span>
+</div>
+<div data-m="trow" style="display: grid; grid-template-columns: minmax(0px, 1fr) 90px 150px; gap: 16px; align-items: center; padding: 20px 24px; border-radius: 16px; background: rgb(255, 255, 255); color: rgb(13, 27, 40); border: 1px solid rgba(0, 0, 0, 0.06); box-shadow: none;">
+<span style="font-size: 16px; font-weight: 600; line-height: 1.35;"><span class="sc-interp">Fundo imobiliário (dividend yield típico)</span></span>
+<span style="text-align: right; font-size: 16px;"><span class="sc-interp">1,00%</span></span>
+<span style="text-align: right; font-size: 18px; font-weight: 700;"><span class="sc-interp">R$ 2.000</span></span>
+</div>
+<div data-m="trow" style="display: grid; grid-template-columns: minmax(0px, 1fr) 90px 150px; gap: 16px; align-items: center; padding: 20px 24px; border-radius: 16px; background: rgb(255, 255, 255); color: rgb(13, 27, 40); border: 1px solid rgba(0, 0, 0, 0.06); box-shadow: none;">
+<span style="font-size: 16px; font-weight: 600; line-height: 1.35;"><span class="sc-interp">Selic / CDI (14,00% a.a., líquido de IR)</span></span>
+<span style="text-align: right; font-size: 16px;"><span class="sc-interp">0,94%</span></span>
+<span style="text-align: right; font-size: 18px; font-weight: 700;"><span class="sc-interp">R$ 1.880</span></span>
+</div>
+<div data-m="trow" style="display: grid; grid-template-columns: minmax(0px, 1fr) 90px 150px; gap: 16px; align-items: center; padding: 20px 24px; border-radius: 16px; background: rgb(255, 255, 255); color: rgb(13, 27, 40); border: 1px solid rgba(0, 0, 0, 0.06); box-shadow: none;">
+<span style="font-size: 16px; font-weight: 600; line-height: 1.35;"><span class="sc-interp">Poupança (0,5% + TR)</span></span>
+<span style="text-align: right; font-size: 16px;"><span class="sc-interp">0,67%</span></span>
+<span style="text-align: right; font-size: 18px; font-weight: 700;"><span class="sc-interp">R$ 1.340</span></span>
+</div>
+<div data-m="trow" style="display: grid; grid-template-columns: minmax(0px, 1fr) 90px 150px; gap: 16px; align-items: center; padding: 20px 24px; border-radius: 16px; background: rgb(255, 255, 255); color: rgb(13, 27, 40); border: 1px solid rgba(0, 0, 0, 0.06); box-shadow: none;">
+<span style="font-size: 16px; font-weight: 600; line-height: 1.35;"><span class="sc-interp">Aluguel residencial (yield bruto de 6% a.a.)</span></span>
+<span style="text-align: right; font-size: 16px;"><span class="sc-interp">0,50%</span></span>
+<span style="text-align: right; font-size: 18px; font-weight: 700;"><span class="sc-interp">R$ 1.000</span></span>
+</div>
+</div>
+<div data-m="stack" style="width: 100%; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px;">
+<div class="scp1" style="border-radius: 20px; padding: 28px; background: rgb(255, 255, 255); border: 1px solid rgba(0, 0, 0, 0.06); display: flex; flex-direction: column; gap: 10px; transition: background 0.3s, color 0.3s, box-shadow 0.3s, transform 0.3s; --tx: #0d1b28; --tx2: #5a5d57; --acc: #0183ff;">
+<span style="font-size: 48px; font-weight: 700; color: var(--acc); letter-spacing: -0.04em; line-height: 1;"><span class="sc-interp">2x</span></span>
+<span style="font-size: 17px; font-weight: 600;"><span class="sc-interp">o que paga um FII</span></span>
+<span style="font-size: 15px; line-height: 1.5; color: var(--tx2);"><span class="sc-interp">Dividend yield típico: 1% ao mês.</span></span>
+</div>
+<div class="scp1" style="border-radius: 20px; padding: 28px; background: rgb(255, 255, 255); border: 1px solid rgba(0, 0, 0, 0.06); display: flex; flex-direction: column; gap: 10px; transition: background 0.3s, color 0.3s, box-shadow 0.3s, transform 0.3s; --tx: #0d1b28; --tx2: #5a5d57; --acc: #0183ff;">
+<span style="font-size: 48px; font-weight: 700; color: var(--acc); letter-spacing: -0.04em; line-height: 1;"><span class="sc-interp">2x</span></span>
+<span style="font-size: 17px; font-weight: 600;"><span class="sc-interp">a Selic, já sem o IR</span></span>
+<span style="font-size: 15px; line-height: 1.5; color: var(--tx2);"><span class="sc-interp">E a Selic cai. A tarifa de energia sobe.</span></span>
+</div>
+<div class="scp1" style="border-radius: 20px; padding: 28px; background: rgb(255, 255, 255); border: 1px solid rgba(0, 0, 0, 0.06); display: flex; flex-direction: column; gap: 10px; transition: background 0.3s, color 0.3s, box-shadow 0.3s, transform 0.3s; --tx: #0d1b28; --tx2: #5a5d57; --acc: #0183ff;">
+<span style="font-size: 48px; font-weight: 700; color: var(--acc); letter-spacing: -0.04em; line-height: 1;"><span class="sc-interp">4x</span></span>
+<span style="font-size: 17px; font-weight: 600;"><span class="sc-interp">o aluguel de um imóvel</span></span>
+<span style="font-size: 15px; line-height: 1.5; color: var(--tx2);"><span class="sc-interp">Sem inquilino, sem vacância, sem IPTU.</span></span>
+</div>
+</div>
+<div class="scp1" style="width: 100%; border-radius: 22px; padding: 32px; border: 1.5px dashed rgb(13, 27, 40); background: rgb(255, 255, 255); display: flex; flex-direction: column; gap: 12px; transition: background 0.3s, color 0.3s, box-shadow 0.3s, transform 0.3s; --tx: #0d1b28; --tx2: #5a5d57; --acc: #0183ff;">
+<span style="font-size: 20px; font-weight: 700; color: var(--tx);">O que você troca por esse rendimento</span>
+<p style="margin: 0px; font-size: 16px; line-height: 1.65; color: var(--tx); text-wrap: pretty;">Liquidez e garantia. Um CDB tem FGC até R$ 250 mil e resgate rápido; um FII você vende em bolsa no mesmo dia. Uma usina não tem nada disso: a saída depende de encontrar comprador para o ativo, e não existe fundo garantidor. É por isso que ela paga mais. Se você precisa do dinheiro em doze meses, o lugar dele não é aqui.</p>
+</div>
+<p style="margin: 0px; font-size: 12px; line-height: 1.6; color: rgb(106, 109, 103);">Selic de 14,00% ao ano definida pelo Copom em 5 de agosto de 2026; rendimento líquido considera IR de 15% para prazo acima de dois anos. Poupança pela regra vigente de 0,5% ao mês mais TR. Yield de aluguel residencial conforme Índice FipeZap de 2026. Dividend yield de fundos imobiliários conforme levantamento de mercado de 2026. Rentabilidade da usina é alvo do modelo e não garantia, conforme premissas descritas nesta página, e está expressa antes da tributação aplicável ao seu caso, que varia conforme você invista como pessoa física ou jurídica. A comparação com Selic usa o valor já líquido de imposto de renda.</p>
+</div></section><section data-screen-label="05 O que você compra" style="background: rgb(13, 27, 40); padding: 120px clamp(24px, 10.42vw, 200px);">
+<div style="width: 100%; display: flex; flex-direction: column; align-items: center; gap: 48px;">
+<div style="display: flex; flex-direction: column; align-items: center; text-align: center; gap: 18px; max-width: 860px;">
+<span style="font-size: 13px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: rgb(155, 246, 33);">O que você compra</span>
+<h2 style="margin: 0px; font-size: clamp(32px, 3.4vw, 52px); line-height: 1.02; font-weight: 700; letter-spacing: -0.03em; text-wrap: balance; color: rgb(255, 255, 255);">Você compra a usina. Não compra trabalho.</h2>
+<p style="margin: 0px; font-size: 17px; line-height: 1.6; color: rgba(255, 255, 255, 0.78); text-wrap: pretty;">Turnkey: entregue construída, homologada e gerando. Sem obra, sem concessionária, sem procurar cliente.</p>
+</div>
+<div aria-label="Fotos das usinas Dr. Energia BR" aria-roledescription="carrossel" class="usinas-carousel" id="usinas-carousel" role="region" tabindex="0">
+<div aria-hidden="false" aria-label="Foto 1 de 3" aria-roledescription="slide" class="usina-slide" role="group" style="opacity: 1; z-index: 1;">
+<img alt="Vista aérea de uma usina solar com painéis próximos a ruas e áreas verdes." class="usina-image" decoding="async" draggable="false" height="902" loading="lazy" src="assets/usina-01.webp" style="--usina-position: 50% 100%; --usina-position-mobile: 42% 100%;" width="1600"/>
+</div>
+<div aria-hidden="true" aria-label="Foto 2 de 3" aria-roledescription="slide" class="usina-slide" role="group" style="opacity: 0; z-index: 0;">
+<img alt="Fileiras de painéis solares vistas do alto, cercadas por vegetação." class="usina-image" decoding="async" draggable="false" height="902" loading="lazy" src="assets/usina-02.webp" style="--usina-position: 50% 100%; --usina-position-mobile: 68% 100%;" width="1600"/>
+</div>
+<div aria-hidden="true" aria-label="Foto 3 de 3" aria-roledescription="slide" class="usina-slide" role="group" style="opacity: 0; z-index: 0;">
+<img alt="Vista aérea panorâmica de uma usina solar próxima ao litoral." class="usina-image" decoding="async" draggable="false" height="902" loading="lazy" src="assets/usina-03.webp" style="--usina-position: 50% 65%; --usina-position-mobile: 50% 65%;" width="1600"/>
+</div>
+<div aria-hidden="true" class="usina-shade"></div>
+<button aria-controls="usinas-carousel" aria-label="Foto anterior" class="usina-arrow usina-prev" type="button"><svg aria-hidden="true" fill="none" height="22" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="22"><path d="m15 6-6 6 6 6"></path></svg></button>
+<button aria-controls="usinas-carousel" aria-label="Próxima foto" class="usina-arrow usina-next" type="button"><svg aria-hidden="true" fill="none" height="22" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="22"><path d="m9 6 6 6-6 6"></path></svg></button>
+<div class="usina-controls">
+<button aria-controls="usinas-carousel" aria-label="Iniciar troca automática das fotos" class="usina-toggle" data-usina-toggle="true" type="button"><svg aria-hidden="true" fill="currentColor" height="18" viewBox="0 0 24 24" width="18"><path d="M8 5v14l11-7z"></path></svg></button>
+<div aria-label="Escolher foto" class="usina-dots">
+<button aria-controls="usinas-carousel" aria-current="true" aria-label="Ver foto 1" class="usina-dot" type="button"><span aria-hidden="true" style="width: 24px; background: rgb(166, 240, 46);"></span></button>
+<button aria-controls="usinas-carousel" aria-current="false" aria-label="Ver foto 2" class="usina-dot" type="button"><span aria-hidden="true" style="width: 8px; background: rgba(255, 255, 255, 0.55);"></span></button>
+<button aria-controls="usinas-carousel" aria-current="false" aria-label="Ver foto 3" class="usina-dot" type="button"><span aria-hidden="true" style="width: 8px; background: rgba(255, 255, 255, 0.55);"></span></button>
+</div>
+<span aria-hidden="true" class="usina-count"><span class="sc-interp">01 / 03</span></span>
+</div>
+</div>
+<div data-portfolio-totals="true" style="width: 100%; display: flex; flex-direction: column; gap: 22px;">
+<div data-m="stack" style="display: grid; grid-template-columns: repeat(2, minmax(0px, 1fr)); gap: 16px;">
+<div style="padding: 32px; border-radius: 22px; background: linear-gradient(135deg, rgba(166, 240, 46, 0.14), rgba(166, 240, 46, 0.03)); border: 1px solid rgba(166, 240, 46, 0.35); display: flex; flex-direction: column; gap: 8px;">
+<span style="font-size: clamp(56px, 5vw, 80px); line-height: 1; font-weight: 700; letter-spacing: -0.04em; color: rgb(166, 240, 46);">16</span>
+<h3 style="margin: 0px; font-size: 21px; line-height: 1.3; font-weight: 600; color: rgb(255, 255, 255);">usinas próprias</h3>
+</div>
+<div style="padding: 32px; border-radius: 22px; background: linear-gradient(135deg, rgba(1, 131, 255, 0.2), rgba(1, 131, 255, 0.04)); border: 1px solid rgba(1, 131, 255, 0.45); display: flex; flex-direction: column; gap: 8px;">
+<span style="font-size: clamp(56px, 5vw, 80px); line-height: 1; font-weight: 700; letter-spacing: -0.04em; color: rgb(166, 240, 46);">+100</span>
+<h3 style="margin: 0px; font-size: 21px; line-height: 1.3; font-weight: 600; color: rgb(255, 255, 255);">usinas solares administradas</h3>
+</div>
+</div>
+<p style="margin: 0px; font-size: 16px; line-height: 1.65; color: rgba(255, 255, 255, 0.78); text-wrap: pretty;">O portfólio apresenta usinas de microgeração de 25, 50 e 75 kWp em Panaquatira, Ilha Verde, Santa Rita, São João dos Patos e Vila Maranhão, com gestão via COOPBRAVE.</p>
+<p style="margin: 0px; font-size: 12px; line-height: 1.5; color: rgba(255, 255, 255, 0.5);">Totais informados pela Dr. Energia BR em outubro de 2026. Modelos e localidades apresentados no portfólio institucional.</p>
+</div>
+<div data-m="stack" style="width: 100%; display: grid; grid-template-columns: repeat(2, minmax(0px, 1fr)); gap: 16px;">
+<div class="scp2" style="border-radius: 10px; padding: 36px 40px; display: flex; flex-direction: column; gap: 12px; background: rgb(15, 26, 38); color: rgb(255, 255, 255); border: 1px solid rgb(155, 246, 33); box-shadow: rgba(155, 246, 33, 0.12) 0px 0px 28px; transition: background 0.3s, border-color 0.3s, box-shadow 0.3s, transform 0.3s;">
+<span style="width: 40px; height: 40px; border-radius: 12px; background: rgb(155, 246, 33); color: rgb(13, 27, 40); display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 16px;"><span class="sc-interp">1</span></span>
+<span style="font-size: 20px; font-weight: 700; letter-spacing: -0.01em; color: rgb(255, 255, 255);"><span class="sc-interp">O ativo é físico e tem endereço</span></span>
+<span style="font-size: 15px; line-height: 1.55; color: rgb(255, 255, 255);"><span class="sc-interp">Não é cota nem papel. É uma usina de 25 a 75 kWp, com endereço, que você pode visitar.</span></span>
+</div>
+<div class="scp2" style="border-radius: 10px; padding: 36px 40px; display: flex; flex-direction: column; gap: 12px; background: rgb(15, 26, 38); color: rgb(255, 255, 255); border: 1px solid rgb(155, 246, 33); box-shadow: rgba(155, 246, 33, 0.12) 0px 0px 28px; transition: background 0.3s, border-color 0.3s, box-shadow 0.3s, transform 0.3s;">
+<span style="width: 40px; height: 40px; border-radius: 12px; background: rgb(155, 246, 33); color: rgb(13, 27, 40); display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 16px;"><span class="sc-interp">2</span></span>
+<span style="font-size: 20px; font-weight: 700; letter-spacing: -0.01em; color: rgb(255, 255, 255);"><span class="sc-interp">A COOPBRAVE opera por você</span></span>
+<span style="font-size: 15px; line-height: 1.55; color: rgb(255, 255, 255);"><span class="sc-interp">A cooperativa aloca, fatura, cobra e responde pela Equatorial. Você não fala com ninguém.</span></span>
+</div>
+<div class="scp2" style="border-radius: 10px; padding: 36px 40px; display: flex; flex-direction: column; gap: 12px; background: rgb(15, 26, 38); color: rgb(255, 255, 255); border: 1px solid rgb(155, 246, 33); box-shadow: rgba(155, 246, 33, 0.12) 0px 0px 28px; transition: background 0.3s, border-color 0.3s, box-shadow 0.3s, transform 0.3s;">
+<span style="width: 40px; height: 40px; border-radius: 12px; background: rgb(155, 246, 33); color: rgb(13, 27, 40); display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 16px;"><span class="sc-interp">3</span></span>
+<span style="font-size: 20px; font-weight: 700; letter-spacing: -0.01em; color: rgb(255, 255, 255);"><span class="sc-interp">A receita vem de conta de luz</span></span>
+<span style="font-size: 15px; line-height: 1.55; color: rgb(255, 255, 255);"><span class="sc-interp">São mais de 1.500 assinantes pagando conta de luz hoje. Seu risco não é um inquilino, é uma carteira.</span></span>
+</div>
+<div class="scp2" style="border-radius: 10px; padding: 36px 40px; display: flex; flex-direction: column; gap: 12px; background: rgb(15, 26, 38); color: rgb(255, 255, 255); border: 1px solid rgb(155, 246, 33); box-shadow: rgba(155, 246, 33, 0.12) 0px 0px 28px; transition: background 0.3s, border-color 0.3s, box-shadow 0.3s, transform 0.3s;">
+<span style="width: 40px; height: 40px; border-radius: 12px; background: rgb(155, 246, 33); color: rgb(13, 27, 40); display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 16px;"><span class="sc-interp">4</span></span>
+<span style="font-size: 20px; font-weight: 700; letter-spacing: -0.01em; color: rgb(255, 255, 255);"><span class="sc-interp">Energia compensada não leva bandeira</span></span>
+<span style="font-size: 15px; line-height: 1.55; color: rgb(255, 255, 255);"><span class="sc-interp">A energia compensada é isenta de bandeira amarela e vermelha. É por isso que o assinante fica.</span></span>
+</div>
+</div>
+</div></section><section aria-labelledby="renda-title" data-screen-label="06 Como a energia gera renda" id="como-gera-renda" style="background: rgb(242, 242, 238); padding: 120px clamp(24px, 10.42vw, 200px);">
+<div data-m="stack" style="width: 100%; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 440px), 1fr)); gap: 64px; align-items: start;">
+<div style="display: flex; flex-direction: column; gap: 20px;">
+<span style="font-size: 13px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: rgb(77, 125, 10);">Como funciona</span>
+<h2 id="renda-title" style="margin: 0px; font-size: clamp(32px, 3.4vw, 52px); line-height: 1.02; font-weight: 700; letter-spacing: -0.03em; text-wrap: balance;">Como a energia da sua usina se transforma em renda.</h2>
+<p style="margin: 0px; font-size: 17px; line-height: 1.6; color: rgb(74, 77, 72); text-wrap: pretty;">Um modelo que conecta energia limpa, economia para o consumidor e renda mensal para o investidor, com gestão profissional em cada etapa.</p>
+<div style="margin-top: 12px; padding: 28px; border-radius: 20px; background: rgb(13, 27, 40); color: rgb(255, 255, 255); display: flex; flex-direction: column; align-items: flex-start; gap: 12px; box-shadow: rgba(13, 27, 40, 0.08) 0px 12px 32px;">
+<span style="font-size: 12px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(255, 255, 255, 0.7);">Payback médio</span>
+<span style="font-size: clamp(30px, 2.8vw, 42px); line-height: 1.1; font-weight: 700; letter-spacing: -0.03em; color: rgb(166, 240, 46);">3,5 a 4 anos</span>
+<p style="margin: 0px; font-size: 14px; line-height: 1.6; color: rgba(255, 255, 255, 0.75); text-wrap: pretty;">Prazo médio de retorno do investimento apresentado no portfólio. A projeção depende das condições de cada usina e da operação.</p>
+</div>
+<div data-usina-vida-util="true" style="padding: 28px; border-radius: 20px; background: rgb(166, 240, 46); color: rgb(13, 27, 40); display: flex; flex-direction: column; align-items: flex-start; gap: 12px;">
+<span style="font-size: 12px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase;">Vida útil estimada da usina</span>
+<span style="font-size: clamp(40px, 4vw, 64px); line-height: 1; font-weight: 700; letter-spacing: -0.035em;">Até 30 anos</span>
+<p style="margin: 0px; font-size: 15px; line-height: 1.6; text-wrap: pretty;">Payback médio de 3,5 a 4 anos, em uma usina com vida útil estimada de 25 a 30 anos. Depois do retorno do aporte, o ativo continua seu e pode seguir gerando energia e renda.</p>
+<p style="margin: 0px; font-size: 13px; line-height: 1.5; color: rgb(53, 85, 10); text-wrap: pretty;">A vida útil depende da manutenção e das condições dos equipamentos. A renda depende da geração e da operação.</p>
+</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 20px;">
+<ol style="list-style: none; padding: 0px; margin: 0px; display: flex; flex-direction: column; gap: 14px;">
+<li style="display: grid; grid-template-columns: 48px minmax(0px, 1fr); gap: 18px; background: rgb(255, 255, 255); border: 1px solid rgba(13, 27, 40, 0.06); border-radius: 20px; padding: 26px; color: rgb(13, 27, 40); box-shadow: rgba(13, 27, 40, 0.024) 0px 6px 24px;">
+<span aria-hidden="true" style="width: 48px; height: 48px; border-radius: 15px; background: rgb(13, 27, 40); color: rgb(166, 240, 46); display: flex; align-items: center; justify-content: center; font-size: 19px; font-weight: 700;"><span class="sc-interp">1</span></span>
+<div style="display: flex; flex-direction: column; gap: 9px;">
+<h3 style="margin: 0px; font-size: 20px; line-height: 1.2; font-weight: 700; letter-spacing: -0.015em;"><span class="sc-interp">Sua usina gera energia</span></h3>
+<p style="margin: 0px; font-size: 16px; line-height: 1.6; color: rgb(90, 93, 87); text-wrap: pretty;"><span class="sc-interp">Usinas solares de 25, 50 e 75 kWp, prontas e operacionais, produzem energia limpa com equipamentos de ponta.</span></p>
+</div>
+</li>
+<li style="display: grid; grid-template-columns: 48px minmax(0px, 1fr); gap: 18px; background: rgb(255, 255, 255); border: 1px solid rgba(13, 27, 40, 0.06); border-radius: 20px; padding: 26px; color: rgb(13, 27, 40); box-shadow: rgba(13, 27, 40, 0.024) 0px 6px 24px;">
+<span aria-hidden="true" style="width: 48px; height: 48px; border-radius: 15px; background: rgb(13, 27, 40); color: rgb(166, 240, 46); display: flex; align-items: center; justify-content: center; font-size: 19px; font-weight: 700;"><span class="sc-interp">2</span></span>
+<div style="display: flex; flex-direction: column; gap: 9px;">
+<h3 style="margin: 0px; font-size: 20px; line-height: 1.2; font-weight: 700; letter-spacing: -0.015em;"><span class="sc-interp">O consumidor recebe desconto</span></h3>
+<p style="margin: 0px; font-size: 16px; line-height: 1.6; color: rgb(90, 93, 87); text-wrap: pretty;"><span class="sc-interp">A energia produzida é compensada nas contas dos beneficiários, com descontos de até 20% sobre o valor compensado.</span></p>
+</div>
+</li>
+<li style="display: grid; grid-template-columns: 48px minmax(0px, 1fr); gap: 18px; background: rgb(255, 255, 255); border: 1px solid rgba(13, 27, 40, 0.06); border-radius: 20px; padding: 26px; color: rgb(13, 27, 40); box-shadow: rgba(13, 27, 40, 0.024) 0px 6px 24px;">
+<span aria-hidden="true" style="width: 48px; height: 48px; border-radius: 15px; background: rgb(13, 27, 40); color: rgb(166, 240, 46); display: flex; align-items: center; justify-content: center; font-size: 19px; font-weight: 700;"><span class="sc-interp">3</span></span>
+<div style="display: flex; flex-direction: column; gap: 9px;">
+<h3 style="margin: 0px; font-size: 20px; line-height: 1.2; font-weight: 700; letter-spacing: -0.015em;"><span class="sc-interp">A COOPBRAVE cuida da gestão</span></h3>
+<p style="margin: 0px; font-size: 16px; line-height: 1.6; color: rgb(90, 93, 87); text-wrap: pretty;"><span class="sc-interp">A Cooperativa Brasil Verde (COOPBRAVE) administra os créditos, as compensações e os repasses mensais ao investidor.</span></p>
+</div>
+</li>
+</ol>
+<p style="margin: 0px; padding: 0px 6px; font-size: 16px; line-height: 1.6; color: rgb(20, 22, 20); font-weight: 500; text-wrap: pretty;">Você recebe os repasses mensais sem precisar cuidar da operação da usina.</p>
+</div>
+</div></section><section aria-labelledby="diferenciais-title" data-screen-label="07 Diferenciais" id="diferenciais" style="position: relative; overflow: hidden; background: rgb(13, 27, 40); color: rgb(255, 255, 255); padding: 120px clamp(24px, 10.42vw, 200px);">
+<div style="position: absolute; width: 640px; height: 640px; left: 30%; top: 20%; border-radius: 50%; background: rgb(166, 240, 46); opacity: 0.12; filter: blur(120px); pointer-events: none;"></div>
+<div style="position: relative; width: 100%; display: flex; flex-direction: column; align-items: center; gap: 48px;">
+<div style="display: flex; flex-direction: column; align-items: center; text-align: center; gap: 18px; max-width: 1000px;">
+<span style="font-size: 13px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: rgb(166, 240, 46);">Diferenciais</span>
+<h2 id="diferenciais-title" style="margin: 0px; font-size: clamp(32px, 3.4vw, 52px); line-height: 1.02; font-weight: 700; letter-spacing: -0.03em; text-wrap: balance;">Diferenciais da Dr. Energia</h2>
+<p style="margin: 0px; font-size: 17px; line-height: 1.6; color: rgba(255, 255, 255, 0.75); text-wrap: pretty;">Do acompanhamento técnico aos repasses, uma operação pensada para o investidor.</p>
+</div>
+<div data-m="stack" style="width: 100%; display: grid; grid-template-columns: repeat(3, minmax(0px, 1fr)); gap: 20px;">
+<article style="padding: 32px; border-radius: 22px; display: flex; flex-direction: column; align-items: flex-start; gap: 24px; background: linear-gradient(135deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.04)); backdrop-filter: blur(24px) saturate(180%); border: 1px solid rgba(255, 255, 255, 0.18); box-shadow: rgba(255, 255, 255, 0.2) 0px 1px 0px inset, rgba(0, 0, 0, 0.16) 0px 16px 40px;">
+<div style="width: 64px; height: 64px; flex: 0 0 auto; display: flex; align-items: center; justify-content: center; border-radius: 18px; background: rgba(166, 240, 46, 0.12); border: 1px solid rgba(166, 240, 46, 0.22); color: rgb(166, 240, 46);">
+<svg aria-hidden="true" fill="none" height="32" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewBox="0 0 24 24" width="32"><rect height="16" rx="3" width="18" x="3" y="5"></rect><path d="M16 3v4M8 3v4M3 11h18M8 16l2 2 5-5"></path></svg>
+</div>
+<div style="display: flex; flex-direction: column; gap: 14px;">
+<h3 style="margin: 0px; font-size: clamp(22px, 1.8vw, 28px); line-height: 1.2; font-weight: 700; letter-spacing: -0.02em;">Compromisso</h3>
+<p style="margin: 0px; font-size: 16px; line-height: 1.65; color: rgba(255, 255, 255, 0.75); text-wrap: pretty;">Projetos entregues dentro do cronograma, com transparência e acompanhamento técnico em todas as etapas.</p>
+</div>
+</article>
+<article style="padding: 32px; border-radius: 22px; display: flex; flex-direction: column; align-items: flex-start; gap: 24px; background: linear-gradient(135deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.04)); backdrop-filter: blur(24px) saturate(180%); border: 1px solid rgba(255, 255, 255, 0.18); box-shadow: rgba(255, 255, 255, 0.2) 0px 1px 0px inset, rgba(0, 0, 0, 0.16) 0px 16px 40px;">
+<div style="width: 64px; height: 64px; flex: 0 0 auto; display: flex; align-items: center; justify-content: center; border-radius: 18px; background: rgba(166, 240, 46, 0.12); border: 1px solid rgba(166, 240, 46, 0.22); color: rgb(166, 240, 46);">
+<svg aria-hidden="true" fill="none" height="32" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewBox="0 0 24 24" width="32"><path d="M4 20h16M5 16v-3M10 16V9M15 16V5M4 9l6-4 4 1 6-4M16 2h4v4"></path></svg>
+</div>
+<div style="display: flex; flex-direction: column; gap: 14px;">
+<h3 style="margin: 0px; font-size: clamp(22px, 1.8vw, 28px); line-height: 1.2; font-weight: 700; letter-spacing: -0.02em;">Renda passiva</h3>
+<p style="margin: 0px; font-size: 16px; line-height: 1.65; color: rgba(255, 255, 255, 0.75); text-wrap: pretty;">Usinas prontas, operacionais e com retorno mensal previsível direto na conta do investidor.</p>
+</div>
+</article>
+<article style="padding: 32px; border-radius: 22px; display: flex; flex-direction: column; align-items: flex-start; gap: 24px; background: linear-gradient(135deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0.04)); backdrop-filter: blur(24px) saturate(180%); border: 1px solid rgba(255, 255, 255, 0.18); box-shadow: rgba(255, 255, 255, 0.2) 0px 1px 0px inset, rgba(0, 0, 0, 0.16) 0px 16px 40px;">
+<div style="width: 64px; height: 64px; flex: 0 0 auto; display: flex; align-items: center; justify-content: center; border-radius: 18px; background: rgba(166, 240, 46, 0.12); border: 1px solid rgba(166, 240, 46, 0.22); color: rgb(166, 240, 46);">
+<svg aria-hidden="true" fill="none" height="32" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" viewBox="0 0 24 24" width="32"><path d="M12 3l8 4v5c0 5-8 9-8 9s-8-4-8-9V7l8-4zM8.5 12l2.5 2.5 4.5-5"></path></svg>
+</div>
+<div style="display: flex; flex-direction: column; gap: 14px;">
+<h3 style="margin: 0px; font-size: clamp(22px, 1.8vw, 28px); line-height: 1.2; font-weight: 700; letter-spacing: -0.02em;">Gestão profissional</h3>
+<p style="margin: 0px; font-size: 16px; line-height: 1.65; color: rgba(255, 255, 255, 0.75); text-wrap: pretty;">Toda a administração dos créditos, compensações e repasses é feita via COOPBRAVE, com segurança.</p>
+</div>
+</article>
+</div>
+</div></section><section data-screen-label="08 Como acontece" style="background: rgb(242, 242, 238); padding: 120px clamp(24px, 10.42vw, 200px);">
+<div style="width: 100%; display: flex; flex-direction: column; align-items: center; gap: 64px;">
+<div style="display: flex; flex-direction: column; align-items: center; text-align: center; gap: 18px; max-width: 860px;">
+<span style="font-size: 13px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: rgb(77, 125, 10);">Como acontece</span>
+<h2 style="margin: 0px; font-size: clamp(32px, 3.4vw, 52px); line-height: 1.02; font-weight: 700; letter-spacing: -0.03em; text-wrap: balance;">Do primeiro contato à primeira transferência.</h2>
+</div>
+<div style="position: relative; width: 100%; max-width: 980px; display: flex; flex-direction: column; gap: 56px; padding: 12px 0px;">
+<div data-m="st-line" style="position: absolute; left: 50%; top: 0px; bottom: 0px; width: 3px; margin-left: -1.5px; background: rgb(13, 27, 40); border-radius: 3px;"></div>
+<div data-m="step" data-step="0" style="display: grid; grid-template-columns: minmax(0px, 1fr) 72px minmax(0px, 1fr); align-items: center; gap: 16px; opacity:1; transform:none; transition: opacity 0.8s, transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);">
+<div data-m="st-side" style="display: flex; justify-content: flex-end;">
+<div class="scp3" data-m="st-box" style="position: relative; --bx: #0d1b28; background: var(--bx); color: rgb(255, 255, 255); border-radius: 6px; padding: 22px 24px; max-width: 380px; font-size: 15px; line-height: 1.6; text-wrap: pretty; box-shadow: rgba(13, 27, 40, 0.12) 0px 14px 40px; transition: background 0.3s, color 0.3s, transform 0.3s;"><span class="sc-interp">Na conversa inicial, sem cobrança, você conhece o portfólio disponível, a projeção da usina que couber no seu aporte e a memória de cálculo.</span><span data-m="st-arrow" style="position: absolute; right: -7px; top: 50%; width: 14px; height: 14px; margin-top: -7px; background: var(--bx); transform: rotate(45deg); transition: background 0.3s;"></span></div>
+</div>
+<div data-m="st-icon" style="display: flex; justify-content: center;"><span style="width: 48px; height: 48px; border-radius: 50%; background: rgb(13, 27, 40); display: flex; align-items: center; justify-content: center; box-shadow: rgb(242, 242, 238) 0px 0px 0px 6px;"><svg height="22" viewBox="0 0 18 22" width="18"><path d="M11 0 1 13h7l-2 9 11-13h-7z" fill="#0183ff"></path></svg></span></div>
+<div data-m="st-side" style="display: flex; justify-content: flex-start;">
+<div data-m="st-title" style="display: flex; flex-direction: column; gap: 4px;"><span style="font-size: 15px; font-weight: 700; letter-spacing: 0.04em; color: rgb(13, 27, 40);"><span style="color: rgb(1, 131, 255); font-size: 22px;"><span class="sc-interp">1</span>º</span> PASSO</span><span style="font-size: 21px; font-weight: 700; line-height: 1.2; color: rgb(13, 27, 40); max-width: 300px;"><span class="sc-interp">Conversa de investimento</span></span></div>
+</div>
+</div>
+<div data-m="step" data-step="1" style="display: grid; grid-template-columns: minmax(0px, 1fr) 72px minmax(0px, 1fr); align-items: center; gap: 16px; opacity:1; transform:none; transition: opacity 0.8s, transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);">
+<div data-m="st-side" style="display: flex; justify-content: flex-end;">
+<div data-m="st-title" style="display: flex; flex-direction: column; align-items: flex-end; text-align: right; gap: 4px;"><span style="font-size: 15px; font-weight: 700; letter-spacing: 0.04em; color: rgb(13, 27, 40);"><span style="color: rgb(1, 131, 255); font-size: 22px;"><span class="sc-interp">2</span>º</span> PASSO</span><span style="font-size: 21px; font-weight: 700; line-height: 1.2; color: rgb(13, 27, 40); max-width: 300px;"><span class="sc-interp">Escolha do ativo e reserva</span></span></div>
+</div>
+<div data-m="st-icon" style="display: flex; justify-content: center;"><span style="width: 48px; height: 48px; border-radius: 50%; background: rgb(13, 27, 40); display: flex; align-items: center; justify-content: center; box-shadow: rgb(242, 242, 238) 0px 0px 0px 6px;"><svg height="22" viewBox="0 0 18 22" width="18"><path d="M11 0 1 13h7l-2 9 11-13h-7z" fill="#0183ff"></path></svg></span></div>
+<div data-m="st-side" style="display: flex; justify-content: flex-start;">
+<div class="scp3" data-m="st-box" style="position: relative; --bx: #0d1b28; background: var(--bx); color: rgb(255, 255, 255); border-radius: 6px; padding: 22px 24px; max-width: 380px; font-size: 15px; line-height: 1.6; text-wrap: pretty; box-shadow: rgba(13, 27, 40, 0.12) 0px 14px 40px; transition: background 0.3s, color 0.3s, transform 0.3s;"><span class="sc-interp">Você define a usina pela potência e pelo aporte. A reserva é formalizada em contrato, com assinatura via GOV.br.</span><span data-m="st-arrow" style="position: absolute; left: -7px; top: 50%; width: 14px; height: 14px; margin-top: -7px; background: var(--bx); transform: rotate(45deg); transition: background 0.3s;"></span></div>
+</div>
+</div>
+<div data-m="step" data-step="2" style="display: grid; grid-template-columns: minmax(0px, 1fr) 72px minmax(0px, 1fr); align-items: center; gap: 16px; opacity:1; transform:none; transition: opacity 0.8s, transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);">
+<div data-m="st-side" style="display: flex; justify-content: flex-end;">
+<div class="scp3" data-m="st-box" style="position: relative; --bx: #0d1b28; background: var(--bx); color: rgb(255, 255, 255); border-radius: 6px; padding: 22px 24px; max-width: 380px; font-size: 15px; line-height: 1.6; text-wrap: pretty; box-shadow: rgba(13, 27, 40, 0.12) 0px 14px 40px; transition: background 0.3s, color 0.3s, transform 0.3s;"><span class="sc-interp">Se a usina ainda estiver em implantação, você acompanha as etapas. Se já estiver operando, a transferência é imediata.</span><span data-m="st-arrow" style="position: absolute; right: -7px; top: 50%; width: 14px; height: 14px; margin-top: -7px; background: var(--bx); transform: rotate(45deg); transition: background 0.3s;"></span></div>
+</div>
+<div data-m="st-icon" style="display: flex; justify-content: center;"><span style="width: 48px; height: 48px; border-radius: 50%; background: rgb(13, 27, 40); display: flex; align-items: center; justify-content: center; box-shadow: rgb(242, 242, 238) 0px 0px 0px 6px;"><svg height="22" viewBox="0 0 18 22" width="18"><path d="M11 0 1 13h7l-2 9 11-13h-7z" fill="#0183ff"></path></svg></span></div>
+<div data-m="st-side" style="display: flex; justify-content: flex-start;">
+<div data-m="st-title" style="display: flex; flex-direction: column; gap: 4px;"><span style="font-size: 15px; font-weight: 700; letter-spacing: 0.04em; color: rgb(13, 27, 40);"><span style="color: rgb(1, 131, 255); font-size: 22px;"><span class="sc-interp">3</span>º</span> PASSO</span><span style="font-size: 21px; font-weight: 700; line-height: 1.2; color: rgb(13, 27, 40); max-width: 300px;"><span class="sc-interp">Construção acompanhada</span></span></div>
+</div>
+</div>
+<div data-m="step" data-step="3" style="display: grid; grid-template-columns: minmax(0px, 1fr) 72px minmax(0px, 1fr); align-items: center; gap: 16px; opacity:1; transform:none; transition: opacity 0.8s, transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);">
+<div data-m="st-side" style="display: flex; justify-content: flex-end;">
+<div data-m="st-title" style="display: flex; flex-direction: column; align-items: flex-end; text-align: right; gap: 4px;"><span style="font-size: 15px; font-weight: 700; letter-spacing: 0.04em; color: rgb(13, 27, 40);"><span style="color: rgb(1, 131, 255); font-size: 22px;"><span class="sc-interp">4</span>º</span> PASSO</span><span style="font-size: 21px; font-weight: 700; line-height: 1.2; color: rgb(13, 27, 40); max-width: 300px;"><span class="sc-interp">Renda passiva com gestão COOPBRAVE</span></span></div>
+</div>
+<div data-m="st-icon" style="display: flex; justify-content: center;"><span style="width: 48px; height: 48px; border-radius: 50%; background: rgb(13, 27, 40); display: flex; align-items: center; justify-content: center; box-shadow: rgb(242, 242, 238) 0px 0px 0px 6px;"><svg height="22" viewBox="0 0 18 22" width="18"><path d="M11 0 1 13h7l-2 9 11-13h-7z" fill="#0183ff"></path></svg></span></div>
+<div data-m="st-side" style="display: flex; justify-content: flex-start;">
+<div class="scp3" data-m="st-box" style="position: relative; --bx: #0d1b28; background: var(--bx); color: rgb(255, 255, 255); border-radius: 6px; padding: 22px 24px; max-width: 380px; font-size: 15px; line-height: 1.6; text-wrap: pretty; box-shadow: rgba(13, 27, 40, 0.12) 0px 14px 40px; transition: background 0.3s, color 0.3s, transform 0.3s;"><span class="sc-interp">A cooperativa aloca os assinantes, fatura, cobra e repassa. Você recebe o relatório de geração e o resultado do período.</span><span data-m="st-arrow" style="position: absolute; left: -7px; top: 50%; width: 14px; height: 14px; margin-top: -7px; background: var(--bx); transform: rotate(45deg); transition: background 0.3s;"></span></div>
+</div>
+</div>
+</div>
+</div></section><section data-screen-label="10 Quem está do outro lado" style="background: rgb(13, 27, 40); padding: 120px clamp(24px, 10.42vw, 200px);">
+<div style="width: 100%; display: flex; flex-direction: column; align-items: center; gap: 48px;">
+<div style="display: flex; flex-direction: column; align-items: center; text-align: center; gap: 18px; max-width: 860px;">
+<span style="font-size: 13px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: rgb(155, 246, 33);">Quem está do outro lado</span>
+<h2 style="margin: 0px; font-size: clamp(32px, 3.4vw, 52px); line-height: 1.02; font-weight: 700; letter-spacing: -0.03em; text-wrap: balance; color: rgb(255, 255, 255);">Nome, endereço e CNPJ.</h2>
+</div>
+<div data-m="stack" style="width: 100%; display: grid; grid-template-columns: repeat(3, minmax(0px, 1fr)); gap: 16px;">
+<div class="scp4" style="position: relative; height: 440px; border-radius: 12px; overflow: hidden; background: rgb(15, 26, 38); border: 1px solid rgb(155, 246, 33); box-shadow: rgba(155, 246, 33, 0.12) 0px 0px 28px; --pb: rgba(13,27,40,.35); transition: box-shadow 0.3s, transform 0.3s, border-color 0.3s;">
+<div style="position: absolute; inset: 0px;"><img alt="Guilherme Lopes" decoding="async" height="1800" loading="lazy" src="assets/guilherme-lopes.webp" style="width: 100%; height: 100%; object-fit: cover; object-position: 60% 55%; display: block;" width="782"/></div>
+<div style="position: absolute; left: 0px; right: 0px; bottom: 0px; pointer-events: none; min-height: 220px; padding: 26px 28px; display: flex; flex-direction: column; justify-content: flex-start; gap: 10px; background: linear-gradient(180deg,rgba(255,255,255,.14),rgba(255,255,255,.02)),var(--pb); backdrop-filter: blur(22px) saturate(180%); border-top: 1px solid rgba(255, 255, 255, 0.22); box-shadow: rgba(255, 255, 255, 0.25) 0px 1px 0px inset; transition: background 0.3s;">
+<span style="font-size: 20px; font-weight: 700; color: rgb(255, 255, 255);">Guilherme Lopes</span>
+<span style="font-size: 15px; line-height: 1.55; color: rgb(255, 255, 255);">Fundador e presidente da COOPBRAVE. Antes, sócio da Dr. Home BR, com 20 ambulâncias e mais de 100 funcionários. Recebeu dois prêmios de melhor startup pela Dr. Home e um prêmio pela Dr. Energia BR.</span>
+</div>
+</div>
+<div class="scp4" style="position: relative; height: 440px; border-radius: 12px; overflow: hidden; background: rgb(255, 255, 255); border: 1px solid rgb(155, 246, 33); box-shadow: rgba(155, 246, 33, 0.12) 0px 0px 28px; --pb: rgba(13,27,40,.94); transition: box-shadow 0.3s, transform 0.3s, border-color 0.3s;">
+<div style="position: absolute; inset: 0px 0px 220px; background: rgb(255, 255, 255); display: flex; align-items: center; justify-content: center; padding: 24px;"><img alt="Brasil Verde Cooperativa" decoding="async" height="447" loading="lazy" src="assets/coopbrave.webp" style="max-width: 78%; max-height: 100%; object-fit: contain; display: block;" width="447"/></div>
+<div style="position: absolute; left: 0px; right: 0px; bottom: 0px; pointer-events: none; min-height: 220px; padding: 26px 28px; display: flex; flex-direction: column; justify-content: flex-start; gap: 10px; background: linear-gradient(180deg,rgba(255,255,255,.14),rgba(255,255,255,.02)),var(--pb); backdrop-filter: blur(22px) saturate(180%); border-top: 1px solid rgba(255, 255, 255, 0.22); box-shadow: rgba(255, 255, 255, 0.25) 0px 1px 0px inset; transition: background 0.3s;">
+<span style="font-size: 20px; font-weight: 700; color: rgb(255, 255, 255);">COOPBRAVE</span>
+<span style="font-size: 15px; line-height: 1.55; color: rgb(255, 255, 255);">Cooperativa Brasil Verde Energia. Estrutura separada da comercializadora, com contabilidade própria.</span>
+</div>
+</div>
+<div class="scp4" style="position: relative; height: 440px; border-radius: 12px; overflow: hidden; background: rgb(15, 26, 38); border: 1px solid rgb(155, 246, 33); box-shadow: rgba(155, 246, 33, 0.12) 0px 0px 28px; --pb: rgba(13,27,40,.35); transition: box-shadow 0.3s, transform 0.3s, border-color 0.3s;">
+<div style="position: absolute; inset: 0px;"><img alt="Fachada Dr. Energia BR" decoding="async" height="1800" loading="lazy" src="assets/fachada-dr-energia.webp" style="width: 100%; height: 100%; object-fit: cover; object-position: 50% 40%; display: block;" width="838"/></div>
+<div style="position: absolute; left: 0px; right: 0px; bottom: 0px; pointer-events: none; min-height: 220px; padding: 26px 28px; display: flex; flex-direction: column; justify-content: flex-start; gap: 10px; background: linear-gradient(180deg,rgba(255,255,255,.14),rgba(255,255,255,.02)),var(--pb); backdrop-filter: blur(22px) saturate(180%); border-top: 1px solid rgba(255, 255, 255, 0.22); box-shadow: rgba(255, 255, 255, 0.25) 0px 1px 0px inset; transition: background 0.3s;">
+<span style="font-size: 20px; font-weight: 700; color: rgb(255, 255, 255);">Presença local</span>
+<span style="font-size: 15px; line-height: 1.55; color: rgb(255, 255, 255);">Sempre presentes nos maiores eventos nacionais, com visitas constantes à China, Austrália, Alemanha, Londres, Israel e Vale do Silício em busca da melhor tecnologia.</span>
+</div>
+</div>
+</div>
+</div></section><section data-screen-label="11 FAQ" style="background: rgb(242, 242, 238); padding: 120px clamp(24px, 10.42vw, 200px);">
+<div style="width: 100%; display: flex; flex-direction: column; align-items: center; gap: 48px;">
+<div style="display: flex; flex-direction: column; align-items: center; text-align: center; gap: 18px; max-width: 860px;">
+<span style="font-size: 13px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: rgb(77, 125, 10);">Perguntas que todo investidor faz</span>
+<h2 style="margin: 0px; font-size: clamp(32px, 3.4vw, 52px); line-height: 1.02; font-weight: 700; letter-spacing: -0.03em;">Sem rodeio.</h2>
+</div>
+<div style="width: 100%; max-width: 980px; display: flex; flex-direction: column; gap: 10px;">
+<details class="scp5 lp-faq" style="background: rgb(255, 255, 255); border-radius: 18px; overflow: hidden; color: rgb(20, 22, 20); transition: background 0.3s, color 0.3s, box-shadow 0.3s, transform 0.3s; --tx: #0d1b28; --tx2: #5a5d57; --acc: #0183ff;"><summary style="display:flex;justify-content:space-between;align-items:center;gap:20px;padding:22px 26px;font-family:Syne,sans-serif;font-size:17px;font-weight:600;color:inherit;cursor:pointer;list-style:none;"><span>A conversa inicial tem custo?</span><span aria-hidden="true" class="faq-symbol">+</span></summary><p style="padding:0 26px 24px;margin:0;color:var(--tx2,#5a5d57);font-size:15px;line-height:1.65;">Não. A conversa inicial é sem cobrança. Você conhece as usinas disponíveis, avalia as projeções para o seu aporte e tira suas dúvidas antes de decidir investir.</p></details>
+<details class="scp5 lp-faq" style="background: rgb(255, 255, 255); border-radius: 18px; overflow: hidden; color: rgb(20, 22, 20); transition: background 0.3s, color 0.3s, box-shadow 0.3s, transform 0.3s; --tx: #0d1b28; --tx2: #5a5d57; --acc: #0183ff;"><summary style="display:flex;justify-content:space-between;align-items:center;gap:20px;padding:22px 26px;font-family:Syne,sans-serif;font-size:17px;font-weight:600;color:inherit;cursor:pointer;list-style:none;"><span>Eu viro dono da usina ou compro uma cota?</span><span aria-hidden="true" class="faq-symbol">+</span></summary><p style="padding:0 26px 24px;margin:0;color:var(--tx2,#5a5d57);font-size:15px;line-height:1.65;">O modelo padrão é a aquisição do ativo em seu nome, no formato turnkey. A estrutura exata, incluindo titularidade, contrato e forma de repasse, é apresentada e entregue por escrito na conversa, antes de qualquer pagamento.</p></details>
+<details class="scp5 lp-faq" style="background: rgb(255, 255, 255); border-radius: 18px; overflow: hidden; color: rgb(20, 22, 20); transition: background 0.3s, color 0.3s, box-shadow 0.3s, transform 0.3s; --tx: #0d1b28; --tx2: #5a5d57; --acc: #0183ff;"><summary style="display:flex;justify-content:space-between;align-items:center;gap:20px;padding:22px 26px;font-family:Syne,sans-serif;font-size:17px;font-weight:600;color:inherit;cursor:pointer;list-style:none;"><span>Isso é garantido?</span><span aria-hidden="true" class="faq-symbol">+</span></summary><p style="padding:0 26px 24px;margin:0;color:var(--tx2,#5a5d57);font-size:15px;line-height:1.65;">Não. Rentabilidade-alvo não é rentabilidade garantida, e desconfie de quem prometer. O que existe é um ativo físico, uma base de 970 clientes pagantes e um histórico de operação desde 2019. O retorno depende de ocupação, adimplência e tarifa, como está detalhado acima.</p></details>
+<details class="scp5 lp-faq" style="background: rgb(255, 255, 255); border-radius: 18px; overflow: hidden; color: rgb(20, 22, 20); transition: background 0.3s, color 0.3s, box-shadow 0.3s, transform 0.3s; --tx: #0d1b28; --tx2: #5a5d57; --acc: #0183ff;"><summary style="display:flex;justify-content:space-between;align-items:center;gap:20px;padding:22px 26px;font-family:Syne,sans-serif;font-size:17px;font-weight:600;color:inherit;cursor:pointer;list-style:none;"><span>Como eu sei que as usinas existem?</span><span aria-hidden="true" class="faq-symbol">+</span></summary><p style="padding:0 26px 24px;margin:0;color:var(--tx2,#5a5d57);font-size:15px;line-height:1.65;">Você pode visitar. Os complexos Panaquatira, Ilha Verde e Santa Rita ficam na região metropolitana de São Luís e a visita é agendada na conversa. Levamos você.</p></details>
+<details class="scp5 lp-faq" style="background: rgb(255, 255, 255); border-radius: 18px; overflow: hidden; color: rgb(20, 22, 20); transition: background 0.3s, color 0.3s, box-shadow 0.3s, transform 0.3s; --tx: #0d1b28; --tx2: #5a5d57; --acc: #0183ff;"><summary style="display:flex;justify-content:space-between;align-items:center;gap:20px;padding:22px 26px;font-family:Syne,sans-serif;font-size:17px;font-weight:600;color:inherit;cursor:pointer;list-style:none;"><span>E se eu quiser sair?</span><span aria-hidden="true" class="faq-symbol">+</span></summary><p style="padding:0 26px 24px;margin:0;color:var(--tx2,#5a5d57);font-size:15px;line-height:1.65;">O ativo pode ser vendido, e a cooperativa apoia na transferência da gestão para o novo titular. Mas não há recompra automática e nem prazo garantido de saída. Trate como investimento de prazo longo.</p></details>
+<details class="scp5 lp-faq" style="background: rgb(255, 255, 255); border-radius: 18px; overflow: hidden; color: rgb(20, 22, 20); transition: background 0.3s, color 0.3s, box-shadow 0.3s, transform 0.3s; --tx: #0d1b28; --tx2: #5a5d57; --acc: #0183ff;"><summary style="display:flex;justify-content:space-between;align-items:center;gap:20px;padding:22px 26px;font-family:Syne,sans-serif;font-size:17px;font-weight:600;color:inherit;cursor:pointer;list-style:none;"><span>Qual o aporte mínimo?</span><span aria-hidden="true" class="faq-symbol">+</span></summary><p style="padding:0 26px 24px;margin:0;color:var(--tx2,#5a5d57);font-size:15px;line-height:1.65;">O aporte inicial começa em R$ 40 mil. Esta página apresenta a faixa de R$ 40 mil a R$ 300 mil, conforme as usinas disponíveis. Na conversa você recebe as opções abertas e a projeção de cada uma.</p></details>
+</div>
+</div></section><section data-screen-label="12 CTA final" style="position: relative; overflow: hidden; background: rgb(13, 27, 40); color: rgb(255, 255, 255); padding: 140px clamp(24px, 10.42vw, 200px);">
+<div style='position: absolute; inset: 0px; background-image: url("assets/cta-usina.webp"); background-size: cover; background-position: center center; background-attachment: fixed;'></div>
+<div style="position: absolute; inset: 0px; pointer-events: none; background: linear-gradient(rgba(13, 27, 40, 0.92) 0%, rgba(13, 27, 40, 0.82) 50%, rgba(13, 27, 40, 0.95) 100%);"></div>
+<div style="position: relative; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 22px; max-width: 820px; margin: 0px auto;">
+<span style="font-size: 13px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: rgb(166, 240, 46);">Próximo passo</span>
+<h2 style="margin: 0px; font-size: clamp(36px, 4.4vw, 68px); line-height: 1; font-weight: 700; letter-spacing: -0.035em; text-wrap: balance;">Veja quanto a sua usina paga.</h2>
+<p style="margin: 0px; font-size: 18px; line-height: 1.6; color: rgba(255, 255, 255, 0.8); text-wrap: pretty;">Conheça o portfólio disponível, a projeção da usina que cabe no seu aporte<br/>e a memória de cálculo aberta. Agende uma conversa inicial sem cobrança.</p>
+<a class="brand-primary-cta scp0" href="https://wa.me/5598988049776?text=Ol%C3%A1%2C%20quero%20agendar%20a%20conversa%20de%20investimento%20em%20usina%20solar" style="margin-top: 10px; font-weight: 700; font-size: 18px; color: rgb(13, 27, 40); background: rgb(166, 240, 46); padding: 20px 34px; border-radius: 14px; display: inline-block; box-shadow: rgba(166, 240, 46, 0.22) 0px 12px 34px; transition: background 0.2s, color 0.2s, transform 0.2s, box-shadow 0.2s;" target="_blank">Agendar conversa de investimento</a>
+<p style="margin: 0px; font-size: 13px; color: rgba(255, 255, 255, 0.6);">Resposta em horário comercial pelo WhatsApp (98) 98804-9776.</p>
+</div></section><footer style="background: rgb(13, 27, 40); border-top: 1px solid rgba(255, 255, 255, 0.1); color: rgb(255, 255, 255); padding: 72px clamp(24px, 10.42vw, 200px) 48px; display: flex; flex-direction: column; gap: 48px;">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 40px;">
+<div style="display: flex; flex-direction: column; gap: 12px;">
+<img alt="Dr. Energia BR" decoding="async" height="255" loading="lazy" src="assets/marca-dr-energia.webp" style="height: 40px; width: auto; display: block; align-self: flex-start;" width="1600"/>
+<span style="font-size: 15px; color: rgb(166, 240, 46); font-weight: 600;">Mercado Solar Inteligente</span>
+<a class="scp6" href="https://www.google.com/maps/search/?api=1&amp;query=R.+Garoupas%2C+43%2C+Calhau%2C+S%C3%A3o+Lu%C3%ADs%2C+MA" style="display: flex; align-items: center; gap: 8px; font-size: 14px; color: rgba(255, 255, 255, 0.75); --pin: #9bf621; transition: color 0.25s;" target="_blank"><svg height="18" style="flex: 0 0 auto; color: var(--pin); transition: color 0.25s;" viewBox="0 0 24 24" width="18"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z" fill="currentColor"></path></svg><span>R. Garoupas, 43, Calhau, São Luís, MA</span></a>
+</div>
+<div style="display: flex; flex-direction: column; gap: 12px;">
+<span style="font-size: 13px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(255, 255, 255, 0.5);">Contato</span>
+<div style="display: flex; gap: 12px;">
+<a aria-label="WhatsApp" class="scp7" href="https://wa.me/5598988049776?text=Ol%C3%A1%2C%20quero%20agendar%20a%20conversa%20de%20investimento%20em%20usina%20solar" style="width: 46px; height: 46px; border-radius: 50%; background: rgb(155, 246, 33); color: rgb(13, 27, 40); display: flex; align-items: center; justify-content: center; transition: background 0.25s, color 0.25s, transform 0.25s;" target="_blank"><svg fill="currentColor" height="22" viewBox="0 0 24 24" width="22"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.21 3.08.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.7.63.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35zM12.05 21.5h-.01a9.43 9.43 0 0 1-4.8-1.32l-.35-.2-3.57.93.95-3.48-.22-.36A9.4 9.4 0 0 1 2.6 12.04c0-5.2 4.24-9.44 9.46-9.44 2.52 0 4.9.99 6.68 2.77a9.37 9.37 0 0 1 2.76 6.68c0 5.21-4.24 9.45-9.45 9.45zm8.04-17.49A11.3 11.3 0 0 0 12.05.67C5.78.67.68 5.77.67 12.04c0 2 .52 3.96 1.52 5.69L.57 23.33l5.73-1.5a11.33 11.33 0 0 0 5.74 1.46h.01c6.27 0 11.37-5.1 11.38-11.37 0-3.04-1.18-5.9-3.34-8.05z"></path></svg></a>
+<a aria-label="Instagram" class="scp7" href="https://www.instagram.com/drenergia_br/" style="width: 46px; height: 46px; border-radius: 50%; background: rgb(155, 246, 33); color: rgb(13, 27, 40); display: flex; align-items: center; justify-content: center; transition: background 0.25s, color 0.25s, transform 0.25s;" target="_blank"><svg fill="none" height="22" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="22"><rect height="19" rx="5.5" width="19" x="2.5" y="2.5"></rect><circle cx="12" cy="12" r="4.2"></circle><circle cx="17.6" cy="6.4" fill="currentColor" r="1" stroke="none"></circle></svg></a>
+</div>
+</div>
+</div>
+<p style="margin: 0px; padding-top: 28px; border-top: 1px solid rgba(255, 255, 255, 0.1); font-size: 12px; line-height: 1.65; color: rgba(255, 255, 255, 0.45);">Esta página apresenta oportunidade de aquisição de ativo de geração distribuída de energia. As faixas de rentabilidade e payback aqui citadas são alvos do modelo operacional, calculadas sobre premissas de ocupação, adimplência e tarifa descritas nesta página, e não constituem garantia, promessa ou compromisso de resultado. Investimento em ativo de infraestrutura envolve risco, inclusive de perda, e não conta com garantia do Fundo Garantidor de Créditos. A geração distribuída é regida pela Lei 14.300/2022. Condições completas, titularidade do ativo e forma de remuneração são apresentadas em contrato antes de qualquer pagamento. A base de clientes foi informada pela Dr. Energia BR em agosto de 2026; os totais de usinas, no check-in de 6 de outubro de 2026.</p></footer></div></div>
+<script defer="" src="interacoes.js"></script>
+</body>
+</html>
